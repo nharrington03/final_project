@@ -1,0 +1,37 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+<div class="container justify-content-center">
+    <form action ="{{ url_for('addrec')}}" method = "POST">
+        <h3>Register For Classes</h3>
+
+        <div class="form-floating">
+        <input type="text" class="form-control" id="floatinginput" placeholder="Jane Doe" name="name">
+        <label for="floatinginput">Name</label>
+        </div>
+
+        <div class="form-floating">
+        <input type="text" class="form-control" id="floatinginput" placeholder="12345" name="StuID">
+        <label for="floatinginput">StudentID</label>
+        </div>
+
+        <div class="form-floating">
+            <input type="text" class="form-control" id="floatinginput" placeholder="database design" name="class1">
+            <label for="floatinginput">Class1</label>
+        </div>
+        
+        <div class="form-floating">
+            <input type="text" class="form-control" id="floatinginput" placeholder="Host Scripting" name="class2">
+            <label for="floatinginput">Class2</label>
+        </div>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="floatinginput" placeholder="Linux Operating System" name="class3">
+            <label for="floatinginput">Class3</label>
+        </div>
+        <div class="form-group row"></div>
+        <input class="btn btn-success" type="submit" value="Submit"/>
+    </div>    
+    </form>
+{% endblock %}
